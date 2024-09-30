@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Kullanici.master.cs" Inherits="Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Yemek Tarifi</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 700px;
+            height: 150px;
+            margin-left: 300px;
+            text-align: left;
+            background-color: #3399FF;
+        }
+
+        .auto-style2 {
+            background-color: #3399FF;
+        }
+
+        .auto-style3 {
+            width: 200px;
+            height: 200px;
+            background-color: #66FFCC;
+        }
+
+        .auto-style4 {
+            background-color: #FFFF99;
+            height: 350px;
+            width: 450px;
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;" class="auto-style2"></div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
+
+        <div style="margin-left: 300px;" class="auto-style3">
+            <div class="auto-style4">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
+
+
