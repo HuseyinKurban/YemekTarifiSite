@@ -5,6 +5,8 @@
 <html>
 <head runat="server">
     <title>Yemek Tarifi</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -13,41 +15,96 @@
             height: 150px;
             margin-left: 300px;
             text-align: left;
-            background-color: #3399FF;
+            background-color: cadetblue;
         }
 
         .auto-style2 {
-            background-color: #3399FF;
+            background-color: cadetblue;
         }
 
-        .auto-style3 {
-            width: 200px;
-            height: 200px;
-            background-color: #66FFCC;
+        .auto-style5 {
+            width: 100%;
+            border-style: solid;
+            border-width: 0px;
+            height: 40px;
         }
 
-        .auto-style4 {
-            background-color: #FFFF99;
-            height: 350px;
+        .auto-style6 {
+            color: #FFFFFF;
+            text-align: center;
+            height: 20px;
+            background-color: #FFFFFF;
+        }
+
+        .auto-style7 {
             width: 450px;
-            margin-left: 250px;
+            height: auto;
+            float: left;
+        }
+
+        .auto-style8 {
+            width: 700px;
+            height: 500px;
+        }
+
+        .auto-style9 {
+            width: 200px;
+            float: left;
+            height: auto;
+        }
+
+        .auto-style10 {
+            text-align: left;
+        }
+
+        .auto-style11 {
+            font-size: large;
         }
     </style>
 </head>
-<body>
+<body style="height: 744px">
     <form id="form1" runat="server">
         <div class="auto-style1">
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
-        <div style="margin-left: 300px; width: 700px; height: 20px;" class="auto-style2"></div>
+        <div style="margin-left: 300px; width: 700px; height: 40px;" class="auto-style2">
+            <table class="auto-style5">
+                <tr>
+                    <td class="auto-style6"><strong><a href="AnaSayfa.aspx">Ana Sayfa</a></strong></td>
+                    <td class="auto-style6"><strong><a href="GununYemegi.aspx">Günün Yemeği</a></strong></td>
+                    <td class="auto-style6"><strong><a href="TarifOner.aspx">Tarif Öner</a></strong></td>
+                    <td class="auto-style6"><strong><a href="Hakkimizda.aspx">Hakkımızda</a></strong></td>
+                    <td class="auto-style6"><strong><a href="iletisim.aspx">İletişim</a></strong></td>
+                </tr>
+            </table>
+        </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
+        <div style="margin-left: 300px;" class="auto-style8">
 
-        <div style="margin-left: 300px;" class="auto-style3">
-            <div class="auto-style4">
+            <div style="background-color: cadetblue" class="auto-style9">
+                <div class="auto-style10">
+                    <strong><span class="auto-style11">KATEGORİLER</span></strong><br />
+                    <br />
+                </div>
+                <asp:DataList ID="DataList1" runat="server" Width="200px">
+                    <ItemTemplate>
+                        <div style="border: thin solid #CCCCCC">
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            &nbsp;(
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                            )
+                        </div>
+                    </ItemTemplate>
+                </asp:DataList>
+            </div>
+            <div style="margin-left: 50px; background-color: cadetblue" class="auto-style7">
+
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
+
         </div>
+
 
     </form>
 </body>
