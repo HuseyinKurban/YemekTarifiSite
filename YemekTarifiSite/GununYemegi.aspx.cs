@@ -17,6 +17,8 @@ public partial class GununYemegi : System.Web.UI.Page
         SqlDataReader oku = baglan.ExecuteReader();
         DataList2.DataSource = oku;
         DataList2.DataBind();
+       
+
 
     }
 }

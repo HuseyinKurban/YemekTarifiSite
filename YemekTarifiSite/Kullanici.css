@@ -1,0 +1,168 @@
+﻿a:link {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+}
+
+a:hover {
+    font-size: 18px;
+    color: #ffd800;
+}
+
+.comment-box {
+  
+    padding: 10px; /* İçerik boşluğu */
+    border: 2px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kenar yuvarlama */
+    font-size: 16px; /* Yazı boyutu */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+    transition: border-color 0.3s; /* Kenar rengi geçişi */
+}
+
+    /* Metin kutusunun odaklanması (focus) durumunda */
+    .comment-box:focus {
+        border-color: #007BFF; /* Odaklandığında kenar rengi */
+        outline: none; /* Varsayılan kenar çizgisini kaldır */
+    }
+
+    /* Placeholder metin stili */
+    .comment-box::placeholder {
+        color: #999; /* Placeholder rengi */
+        font-style: italic; /* İtalik yazı */
+    }
+
+.comment-button {
+    background-color: #007BFF; /* Buton arka plan rengi (mavi) */
+    color: white; /* Yazı rengi */
+    padding: 10px 20px; /* İçerik boşluğu (üst-alt sağ-sol) */
+    border: none; /* Kenar yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    font-size: 16px; /* Yazı boyutu */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    cursor: pointer; /* İmleç değişimi */
+    transition: background-color 0.3s; /* Arka plan rengi geçişi */
+}
+
+    /* Butona fare ile üzerine gelindiğinde */
+    .comment-button:hover {
+        background-color: #0056b3; /* Hover durumunda arka plan rengi */
+    }
+
+
+
+.iletisimlabel {
+    display: block; /* Etiketin blok olarak görüntülenmesi */
+    margin-top: 15px; /* Üstte boşluk */
+    font-size: 20px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    color: white; /* Normal yazı rengi */
+    text-transform: uppercase; /* Büyük harfle yazma */
+    transition: color 0.3s; /* Renk geçişi için animasyon */
+}
+
+    /* Fare ile üzerine gelindiğinde */
+    .iletisimlabel:hover {
+        color: #007BFF; /* Üzerine gelindiğinde yazı rengi değişimi */
+    }
+
+.iletisimbasliklabel {
+    display: block; /* Etiketin blok olarak görüntülenmesi */
+    font-size: 30px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    color: white; /* Normal yazı rengi */
+    text-transform: uppercase; /* Büyük harfle yazma */
+    transition: color 0.3s; /* Renk geçişi için animasyon */
+    text-align: center; /* Ortaya hizalama */
+    margin-top: 0; /* Üstte boşluk yok */
+}
+
+    /* Fare ile üzerine gelindiğinde */
+    .iletisimbasliklabel:hover {
+        color: #007BFF; /* Üzerine gelindiğinde yazı rengi değişimi */
+    }
+
+.tarif-ad-textbox {
+    width: 100%; /* Tam genişlik */
+    height: 20px; /* Yükseklik */
+    padding: 8px; /* İçerik boşluğu */
+    border: 2px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kenar yuvarlama */
+    font-size: 16px; /* Yazı boyutu */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-color: #f8f9fa; /* Açık gri arka plan rengi */
+    transition: border-color 0.3s, background-color 0.3s; /* Kenar ve arka plan rengi geçişi */
+}
+
+    /* Metin kutusu odaklandığında */
+    .tarif-ad-textbox:focus {
+        border-color: #007BFF; /* Odaklandığında kenar rengi */
+        outline: none; /* Varsayılan kenar çizgisini kaldır */
+        background-color: #e9ecef; /* Odaklandığında arka plan rengi değişimi */
+    }
+
+.malzemeler-textbox, .yapilisi-textbox {
+    width: 100%; /* Tam genişlik */
+    height: 80px; /* Yükseklik */
+    padding: 10px; /* İçerik boşluğu */
+    border: 2px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kenar yuvarlama */
+    font-size: 16px; /* Yazı boyutu */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-color: #f8f9fa; /* Açık gri arka plan rengi */
+    transition: border-color 0.3s, background-color 0.3s; /* Kenar ve arka plan rengi geçişi */
+}
+
+    /* Metin kutusu odaklandığında */
+    .malzemeler-textbox:focus, .yapilisi-textbox:focus {
+        border-color: #007BFF; /* Odaklandığında kenar rengi */
+        outline: none; /* Varsayılan kenar çizgisini kaldır */
+        background-color: #e9ecef; /* Odaklandığında arka plan rengi değişimi */
+    }
+
+.tarif-oneren-textbox, .mail-adresi-textbox {
+    width: 100%; /* Tam genişlik */
+    height: 20px; /* Yükseklik */
+    padding: 8px; /* İçerik boşluğu */
+    border: 2px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kenar yuvarlama */
+    font-size: 16px; /* Yazı boyutu */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-color: #f8f9fa; /* Açık gri arka plan rengi */
+    transition: border-color 0.3s, background-color 0.3s; /* Kenar ve arka plan rengi geçişi */
+}
+
+    /* Metin kutusu odaklandığında */
+    .tarif-oneren-textbox:focus, .mail-adresi-textbox:focus {
+        border-color: #007BFF; /* Odaklandığında kenar rengi */
+        outline: none; /* Varsayılan kenar çizgisini kaldır */
+        background-color: #e9ecef; /* Odaklandığında arka plan rengi değişimi */
+    }
+
+.tarif-oner-button {
+    background-color: #007BFF; /* Buton arka plan rengi */
+    color: white; /* Yazı rengi */
+    font-size: 16px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    padding: 10px 20px; /* İçerik boşluğu (üst-alt, sağ-sol) */
+    border: none; /* Kenar yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer; /* Fareyle üzerine gelindiğinde gösterilen işaretçi */
+    transition: background-color 0.3s, transform 0.2s; /* Renk ve boyut geçişi */
+}
+
+    /* Fare ile üzerine gelindiğinde */
+    .tarif-oner-button:hover {
+        background-color: #0056b3; /* Üzerine gelindiğinde arka plan rengi değişimi */
+        transform: scale(1.05); /* Üzerine gelindiğinde büyütme efekti */
+    }
+
+    /* Buton odaklandığında */
+    .tarif-oner-button:focus {
+        outline: none; /* Varsayılan kenar çizgisini kaldır */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Kenar gölgesi ekle */
+    }
+
+
+
