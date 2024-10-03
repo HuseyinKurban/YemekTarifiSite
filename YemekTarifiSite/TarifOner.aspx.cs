@@ -27,7 +27,6 @@ public partial class TarifOner : System.Web.UI.Page
         komut.Parameters.AddWithValue("@p6", txtmailadresi.Text);
         komut.ExecuteNonQuery();
         bgl.baglanti().Close();
-        Response.Write("<script> alert('Tarifiniz Alınmışır.') </script>");
         txttarifad.Text = "";
         txtmalzemeler.Text = "";
         txtyapilis.Text = "";

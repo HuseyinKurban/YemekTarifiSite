@@ -164,5 +164,93 @@ a:hover {
         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Kenar gölgesi ekle */
     }
 
+.anasayfa-label {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Yumuşak mor-mavi geçiş */
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+    .anasayfa-label::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 300%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+        transition: left 0.5s;
+    }
+
+    .anasayfa-label:hover::before {
+        left: 100%;
+    }
+
+    .anasayfa-label:hover {
+        transform: scale(1.05);
+        background: linear-gradient(90deg, #2575fc, #6a11cb); /* Mor-mavi renklerin ters geçişi */
+    }
+
+
+.resim {
+    width: 300px; /* Resmin genişliği */
+    height: 150px; /* Resmin yüksekliği */
+    object-fit: cover; /* Resmi kırpmadan sığdır */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Yakınlaştırma ve çerçeve geçişi */
+    border: 3px solid #ccc; /* Başlangıçta gri çerçeve */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    cursor: pointer;
+}
+
+    /* Fare ile üzerine gelindiğinde */
+    .resim:hover {
+        transform: scale(1.1); /* %10 yakınlaştırma */
+        border-color: #007BFF; /* Çerçeve rengini mavi yap */
+    }
+
+.yemekler-label {
+    display: inline-block; /* Blok olarak görüntüleme */
+    font-size: 15px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    color: white; /* Başlangıçta beyaz yazı rengi */
+    text-transform: uppercase; /* Büyük harf yap */
+    border-radius: 2px; /* Kenar yuvarlama */
+    transition: transform 0.3s ease, color 0.3s ease; /* Geçiş animasyonları */
+    cursor: pointer; /* İmleci el işareti yap */
+}
+
+    /* Fare ile üzerine gelindiğinde */
+    .yemekler-label:hover {
+        transform: scale(1.1); /* Hafif büyüme efekti */
+        color: #EAB8E4; /* Üzerine gelindiğinde yazı rengi değişimi */
+    }
+
+.social-links {
+    display: flex; /* Yatay hizalama için flex kullan */
+    justify-content: center; /* Ortaya hizalama */
+    margin: 20px 0; /* Üst ve alt boşluk */
+}
+
+.social-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş animasyonları */
+    cursor: pointer; /* İmleci el şeklinde göster */
+}
+
+    .social-image:hover {
+        transform: scale(1.1); /* Hover durumunda hafif büyüme efekti */
+        box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.8); /* Etrafında mavi renkli çizgi efekti */
+    }
+
+
+   
 
 

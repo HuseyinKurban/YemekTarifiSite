@@ -15,12 +15,13 @@
             height: 150px;
             margin-left: 300px;
             text-align: left;
-            background-color: cadetblue;
+            background-color: #FFFFFF;
         }
 
         .auto-style2 {
             background-color: cadetblue;
         }
+
 
         .auto-style5 {
             width: 100%;
@@ -51,6 +52,7 @@
             width: 200px;
             float: left;
             height: auto;
+            color: #FFFFFF;
         }
 
         .auto-style10 {
@@ -58,14 +60,15 @@
         }
 
         .auto-style11 {
-            font-size: large;
+            font-size: 19pt;
         }
     </style>
 </head>
-<body style="height: 744px">
+
+<body style="height: 750px">
     <form id="form1" runat="server">
         <div class="auto-style1">
-            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/istockphoto-986849676-170667a.jpg" Width="700px" />
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/istockphoto-986849676-170667a.jpg" Width="700px" CssClass="resim" />
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
         <div style="margin-left: 300px; width: 700px; height: 40px;" class="auto-style2">
@@ -82,30 +85,32 @@
         <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
         <div style="margin-left: 300px;" class="auto-style8">
 
-            <div style="background-color: cadetblue" class="auto-style9">
+            <div style="background-color: #C6394A;" class="auto-style9">
                 <div class="auto-style10">
-                    <strong><span class="auto-style11">KATEGORİLER</span></strong><br />
-                    <br />
+                    <strong><span class="auto-style11">KATEGORİLER</span><br />
+                        <br />
+                    </strong>
                 </div>
-                <asp:DataList ID="DataList1" runat="server" Width="200px">
-                    <ItemTemplate>
-                        <div style="border: thin solid #CCCCCC">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
-                            &nbsp;(
+                <strong>
+                    <asp:DataList ID="DataList1" runat="server" Width="200px">
+                        <ItemTemplate>
+                            <div style="border: thin solid #FFB74D">
+                                &nbsp;<a href="KategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid")%>"><asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>' CssClass="yemekler-label"></asp:Label></a>
+                                &nbsp;(
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
-                            )
-                        </div>
-                    </ItemTemplate>
-                </asp:DataList>
+                                )
+                            </div>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </strong>
             </div>
-            <div style="margin-left: 50px; background-color: cadetblue" class="auto-style7">
+            <div style="margin-left: 50px; background-color: #C6394A;" class="auto-style7">
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
 
         </div>
-
 
     </form>
 </body>

@@ -17,10 +17,10 @@
         height: 23px;
         text-align: center;
     }
-        .auto-style17 {
-            height: 23px;
-            text-align: right;
-        }
+    .auto-style17 {
+        height: 23px;
+        text-align: right;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

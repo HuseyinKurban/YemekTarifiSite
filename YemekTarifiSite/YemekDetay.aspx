@@ -32,27 +32,32 @@
             font-size: x-large;
             background-color: #FFFFCC;
         }
-        .auto-style22 {
+        .auto-style23 {
             text-align: right;
             font-size: large;
+            color: #FFFFFF;
+        }
+        .auto-style24 {
+            width: 100%;
+            height: 824px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="auto-style13">
+    <table class="auto-style24">
         <tr>
             <td class="auto-style14"><strong>
 <asp:Label ID="Label3" runat="server" CssClass="auto-style12" Text="Label"></asp:Label>
 </strong></td>
         </tr>
         <tr>
-            <td><strong mapid="11a">Malzemeler :</strong>
-                <asp:Label ID="Label4" runat="server" Text='<%# Eval("YemekMalzeme") %>'></asp:Label>
+            <td><span class="auto-style18"><strong mapid="11a">Malzemeler :</strong></span>
+                <asp:Label ID="Label4" runat="server" Text='<%# Eval("YemekMalzeme") %>' CssClass="auto-style18"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td><strong mapid="11e">Yemek Tarifi :</strong>
-                <asp:Label ID="Label5" runat="server" Text='<%# Eval("YemekTarif") %>'></asp:Label>
+            <td><span class="auto-style18"><strong mapid="11e">Yemek Tarifi :</strong></span>
+                <asp:Label ID="Label5" runat="server" Text='<%# Eval("YemekTarif") %>' CssClass="auto-style18"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -87,27 +92,27 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="auto-style22"><strong>Ad Soyad :&nbsp; </strong></td>
+                            <td class="auto-style23"><strong>Ad Soyad :&nbsp; </strong></td>
                             <td>
                                 <asp:TextBox ID="TextBox1" runat="server" Width="250px" Font-Size="14pt" Height="30px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style22"><strong>Mail :</strong></td>
+                            <td class="auto-style23"><strong>Mail :</strong></td>
                             <td>
                                 <asp:TextBox ID="TextBox2" runat="server" Width="250px" Font-Size="14pt" Height="30px"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style22"><strong>Yorum :</strong></td>
+                            <td class="auto-style23"><strong>Yorum :</strong></td>
                             <td>
                                 <asp:TextBox ID="TextBox3" runat="server" Width="250px" Font-Size="14pt" Height="100px" TextMode="MultiLine"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
-                            <td>
-                                <asp:Button  ID="btnYorumYap" runat="server" Text="Yorum Yap" Width="100px" Font-Bold="True" Font-Italic="True" Height="30px" OnClick="btnYorumYap_Click"  />
+                            <td class="auto-style14">
+                                <asp:Button  ID="btnYorumYap" runat="server" Text="Yorum Yap" Width="140px" Font-Bold="True" Font-Italic="True" Height="39px" OnClick="btnYorumYap_Click" CssClass="tarif-oner-button"  />
                             </td>
                         </tr>
                     </table>
