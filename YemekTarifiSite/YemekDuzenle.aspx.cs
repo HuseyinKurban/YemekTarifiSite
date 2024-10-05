@@ -17,7 +17,7 @@ public partial class YemekDuzenle : System.Web.UI.Page
 
         if (Page.IsPostBack == false)
         {
-           
+
 
             //kategori listesi
             SqlCommand komut2 = new SqlCommand("Select * from Tbl_Kategoriler", bgl.baglanti());
@@ -35,7 +35,7 @@ public partial class YemekDuzenle : System.Web.UI.Page
                 txtyemekad.Text = dr[1].ToString();
                 txtyemekmalzeme.Text = dr[2].ToString();
                 txtyemektarifi.Text = dr[3].ToString();
-               DropDownList1.SelectedValue = dr[7].ToString();
+                DropDownList1.SelectedValue = dr[7].ToString();
             }
             bgl.baglanti().Close();
         }
@@ -43,9 +43,8 @@ public partial class YemekDuzenle : System.Web.UI.Page
 
     }
 
-    protected void btnEkle_Click(object sender, EventArgs e)
+    protected void btnDuzenle_Click(object sender, EventArgs e)
     {
-
         SqlCommand komut = new SqlCommand("update Tbl_Yemekler  set YemekAd=@p1,YemekMalzeme=@p2,YemekTarif=@p3,Kategoriid=@p4 where Yemekid=@p5", bgl.baglanti());
         komut.Parameters.AddWithValue("@p1", txtyemekad.Text);
         komut.Parameters.AddWithValue("@p2", txtyemekmalzeme.Text);
@@ -57,6 +56,5 @@ public partial class YemekDuzenle : System.Web.UI.Page
         txtyemekad.Text = "";
         txtyemekmalzeme.Text = "";
         txtyemektarifi.Text = "";
-        
     }
 }
