@@ -32,4 +32,4 @@ Bu proje, Murat Yücedağ hocamın "50 Derste Asp.Net ile Yemek Tarifi Sitesi" s
 🔒 Yorum ve tarif onaylama sistemi ile daha güvenli ve kontrollü bir platform  
 
 ## Video
-[Video İzle](https://drive.google.com/file/d/1RKqTqH3cl8UrssDdT070aKr6Vd6pX22w/view)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AcAqGzqjLJw" frameborder="0" allowfullscreen></iframe>
