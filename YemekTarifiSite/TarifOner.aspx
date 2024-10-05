@@ -12,6 +12,7 @@
             height: 23px;
             text-align: right;
             width: 108px;
+            color: #FFFFFF;
         }
     .auto-style15 {
         height: 23px;
@@ -64,7 +65,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style14"><strong></strong></td>
+        <td class="auto-style14">&nbsp;</td>
         <td class="auto-style15">
             <asp:Button ID="btntarifoner" runat="server" BackColor="#66CCFF" CssClass="tarif-oner-button" Font-Bold="True" Font-Italic="True" Height="50px" Text="Tarif Öner" Width="150px" OnClick="btntarifoner_Click" />
         </td>

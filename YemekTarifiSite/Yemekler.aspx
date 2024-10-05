@@ -64,11 +64,6 @@
             width: 34px;
         }
 
-        .auto-style27 {
-            font-size: 25pt;
-            color: #000000;
-        }
-
         .auto-style28 {
             margin-left: 40px;
         }
@@ -120,6 +115,10 @@
             margin-left: 40px;
             text-align: right;
         }
+        .auto-style37 {
+            font-size: 20pt;
+            color: #000000;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -132,7 +131,7 @@
                 <td class="auto-style26"><strong>
                     <asp:Button ID="btnkapat" runat="server" CssClass="auto-style24" Height="35px" Text="-" Width="35px" OnClick="btnkapat_Click" />
                 </strong></td>
-                <td class="auto-style27"><strong>YEMEK LİSTESİ</strong></td>
+                <td class="auto-style37"><strong>YEMEK LİSTESİ</strong></td>
             </tr>
         </table>
     </asp:Panel>
@@ -168,7 +167,7 @@
                 <td class="auto-style26"><strong>
                     <asp:Button ID="btnpanel4gizle" runat="server" CssClass="auto-style24" Height="35px" Text="-" Width="35px" OnClick="btnpanel4gizle_Click" />
                 </strong></td>
-                <td class="auto-style27"><strong>YEMEK EKLEME</strong></td>
+                <td class="auto-style37"><strong>YEMEK EKLEME</strong></td>
             </tr>
         </table>
     </asp:Panel>

@@ -11,7 +11,6 @@ a:hover {
 }
 
 .comment-box {
-  
     padding: 10px; /* İçerik boşluğu */
     border: 2px solid #ccc; /* Kenar rengi */
     border-radius: 5px; /* Kenar yuvarlama */
@@ -202,6 +201,7 @@ a:hover {
 
 
 .resim {
+
     width: 300px; /* Resmin genişliği */
     height: 150px; /* Resmin yüksekliği */
     object-fit: cover; /* Resmi kırpmadan sığdır */
@@ -249,8 +249,3 @@ a:hover {
         transform: scale(1.1); /* Hover durumunda hafif büyüme efekti */
         box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.8); /* Etrafında mavi renkli çizgi efekti */
     }
-
-
-   
-
-

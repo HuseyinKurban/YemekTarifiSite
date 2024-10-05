@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 public partial class iletisim : System.Web.UI.Page
 {
-    sqlsinif bgl=new sqlsinif();
+    sqlsinif bgl = new sqlsinif();
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -18,16 +18,16 @@ public partial class iletisim : System.Web.UI.Page
     protected void btnGonder_Click(object sender, EventArgs e)
     {
         SqlCommand komut = new SqlCommand("insert into Tbl_Mesajlar (MesajGonderen,MesajBaslik,MesajMail,Mesajicerik) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
-        komut.Parameters.AddWithValue("@p1",txtadsoyad.Text);//ad soyad
-        komut.Parameters.AddWithValue("@p2",txtmail.Text);//mail
-        komut.Parameters.AddWithValue("@p3",txtkonu.Text);//konu
-        komut.Parameters.AddWithValue("@p4",txtmesaj.Text);//icerik
+        komut.Parameters.AddWithValue("@p1", txtadsoyad.Text);
+        komut.Parameters.AddWithValue("@p2", txtkonu.Text);
+        komut.Parameters.AddWithValue("@p3", txtmail.Text);
+        komut.Parameters.AddWithValue("@p4", txtmesaj.Text);
         komut.ExecuteNonQuery();
         bgl.baglanti().Close();
         txtadsoyad.Text = "";
         txtmail.Text = "";
         txtkonu.Text = "";
         txtmesaj.Text = "";
-     
+
     }
 }

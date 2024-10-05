@@ -45,16 +45,38 @@ public partial class YemekDuzenle : System.Web.UI.Page
 
     protected void btnDuzenle_Click(object sender, EventArgs e)
     {
-        SqlCommand komut = new SqlCommand("update Tbl_Yemekler  set YemekAd=@p1,YemekMalzeme=@p2,YemekTarif=@p3,Kategoriid=@p4 where Yemekid=@p5", bgl.baglanti());
+        FileUpload1.SaveAs(Server.MapPath("/YemekResimler/" + FileUpload1.FileName));
+
+
+        SqlCommand komut = new SqlCommand("update Tbl_Yemekler  set YemekAd=@p1,YemekMalzeme=@p2,YemekTarif=@p3,Kategoriid=@p4, YemekResim=@p5 where Yemekid=@p6", bgl.baglanti());
         komut.Parameters.AddWithValue("@p1", txtyemekad.Text);
         komut.Parameters.AddWithValue("@p2", txtyemekmalzeme.Text);
         komut.Parameters.AddWithValue("@p3", txtyemektarifi.Text);
         komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
-        komut.Parameters.AddWithValue("@p5", id);
+        komut.Parameters.AddWithValue("@p5", "~/YemekResimler/" + FileUpload1.FileName);
+        komut.Parameters.AddWithValue("@p6", id);
         komut.ExecuteNonQuery();
         bgl.baglanti().Close();
         txtyemekad.Text = "";
         txtyemekmalzeme.Text = "";
         txtyemektarifi.Text = "";
+
+
+    }
+
+
+
+    protected void btnGununYemegi_Click(object sender, EventArgs e)
+    {
+        //tüm durumu  0 yap
+        SqlCommand komut1 = new SqlCommand("update Tbl_Yemekler set Durum=0 ", bgl.baglanti());
+        komut1.ExecuteNonQuery();
+        bgl.baglanti().Close();
+
+        //günün yemeğini seç
+        SqlCommand komut = new SqlCommand("update Tbl_Yemekler set Durum=1 where Yemekid=@p1", bgl.baglanti());
+        komut.Parameters.AddWithValue("@p1", id);
+        komut.ExecuteNonQuery();
+        bgl.baglanti().Close();
     }
 }

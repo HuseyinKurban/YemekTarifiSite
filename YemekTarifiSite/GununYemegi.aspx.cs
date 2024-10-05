@@ -13,12 +13,10 @@ public partial class GununYemegi : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
        
-        SqlCommand baglan = new SqlCommand("Select * From Tbl_GununYemegi", bgl.baglanti());
+        SqlCommand baglan = new SqlCommand("Select * From Tbl_Yemekler where Durum=1", bgl.baglanti());
         SqlDataReader oku = baglan.ExecuteReader();
         DataList2.DataSource = oku;
         DataList2.DataBind();
-       
-
 
     }
 }

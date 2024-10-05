@@ -63,14 +63,22 @@
                 </td>
             </tr>
             <tr>
+                <td class="auto-style14"><strong>GÖRÜNTÜ :</strong></td>
+                <td class="auto-style28">
+                    <asp:FileUpload ID="FileUpload1" runat="server" Width="270px" />
+                </td>
+            </tr>
+            <tr>
                 <td class="auto-style32">&nbsp;</td>
                 <td class="auto-style36"><strong>
-                    <asp:Button ID="btnDuzenle" runat="server" CssClass="auto-style29" Height="40px" OnClick="btnDuzenle_Click" Text="Güncelle" Width="109px" />
+                    <asp:Button ID="btnDuzenle0" runat="server" CssClass="auto-style29" Height="40px" OnClick="btnDuzenle_Click" Text="Güncelle" Width="109px" />
                     </strong></td>
             </tr>
             <tr>
                 <td class="auto-style32">&nbsp;</td>
-                <td class="auto-style35">&nbsp;</td>
+                <td class="auto-style35"><strong>
+                    <asp:Button ID="btnGununYemegi" runat="server" CssClass="auto-style29" Height="40px"  Text="Günün Yemeği Yap" Width="300px" OnClick="btnGununYemegi_Click" />
+                    </strong></td>
             </tr>
         </table>
     </asp:Panel>

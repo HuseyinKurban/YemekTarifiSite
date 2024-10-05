@@ -50,7 +50,7 @@
     </tr>
     <tr>
         <td class="auto-style17">
-            <asp:Label ID="Label5" runat="server" Text="Mail" CssClass="iletisimlabel"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="MAİL" CssClass="iletisimlabel"></asp:Label>
         </td>
         <td>
             <asp:TextBox ID="txtmail" runat="server" Width="300px" CssClass="comment-box"></asp:TextBox>
@@ -58,7 +58,7 @@
     </tr>
     <tr>
         <td class="auto-style17">
-            <asp:Label ID="Label6" runat="server" Text="Konu" CssClass="iletisimlabel"></asp:Label>
+            <asp:Label ID="Label6" runat="server" Text="KONU" CssClass="iletisimlabel"></asp:Label>
         </td>
         <td>
             <asp:TextBox ID="txtkonu" runat="server" Width="300px" CssClass="comment-box"></asp:TextBox>
