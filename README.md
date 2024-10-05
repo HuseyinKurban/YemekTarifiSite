@@ -1,7 +1,5 @@
-
 Yemek Tarifi Sitesi
-Proje Hakkında:
-
+Proje Hakkında
 Bu proje, Murat Yücedağ hocamın "50 Derste Asp.Net ile Yemek Tarifi Sitesi" serisinden ilham alınarak geliştirilmiş bir yemek tarifi platformudur. Kullanıcılar, tarifleri görüntüleyebilir, yorum yapabilir ve tarif önerebilirken; admin paneli üzerinden kategoriler ve tarifler yönetilmektedir. Ayrıca, kullanıcıların yorumları onaylanarak daha güvenli bir platform sağlanmıştır.
 
 Kullanılan Teknolojiler
