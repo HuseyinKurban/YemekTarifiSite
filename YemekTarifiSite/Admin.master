@@ -51,7 +51,6 @@
         .auto-style13 {
             font-size: 18pt;
         }
-
     </style>
 </head>
 
@@ -72,11 +71,11 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="auto-style13" style="border: thin solid #FFB74D"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
-                            
+                            <td class="auto-style13" style="border: thin solid #FFB74D"><a href="Kategoriler.aspx" style="color: white;">KATEGORİLER</a></td>
+
                         </tr>
                         <tr>
-                            <td class="auto-style13" style="border: thin solid #FFB74D">YEMEKLER</td>
+                            <td class="auto-style13" style="border: thin solid #FFB74D"><a href="Yemekler.aspx" style="color: white;">YEMEKLER</a></td>
                         </tr>
                         <tr>
                             <td class="auto-style13" style="border: thin solid #FFB74D">YORUMLAR</td>
