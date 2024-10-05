@@ -1,3 +1,4 @@
+
 Yemek Tarifi Sitesi
 Proje Hakkında:
 
@@ -8,13 +9,11 @@ Kullanılan Teknolojiler
 🗄️ MSSQL
 🌐 HTML
 🎨 CSS
-
 Kullanıcı Paneli Özellikleri
 🔸 Anasayfada yemek tariflerini görüntüleme
 🔸 Tariflere yorum yapma
 🔸 Kendi tarif önerilerini sunma
 🔸 İletişim formu ile mesaj gönderme
-
 Admin Paneli Özellikleri
 🔹 Kategori ve yemek ekleyip düzenleme, silme işlemleri
 🔹 Kullanıcıların yorumlarını inceleyip onaylama
@@ -22,7 +21,6 @@ Admin Paneli Özellikleri
 🔹 Günün yemeğini seçme
 🔹 Kullanıcılar tarafından önerilen tarifleri değerlendirip kategoriye ekleme
 🔹 "Hakkımızda" bölümünü güncelleme
-
 Proje Teknik Detayları
 🛠️ MSSQL ile dinamik ve güvenli veri yönetimi
 📱 Kullanıcı dostu tasarım
